@@ -13,12 +13,11 @@
 	3.3 Logo
 4. Menu
 5. Home
-6. Boxes
-7. About
-8. Departments
-9. Services
-10. CTA
-11. Footer
+6. Services
+7. Features
+8. Text Section
+9. CTA
+10. Footer
 
 
 
@@ -48,7 +47,7 @@ body
 	font-size: 15px;
 	font-weight: 500;
 	background: #FFFFFF;
-	color: #FFFFFF;
+	color: #696969;
 }
 div
 {
@@ -68,7 +67,7 @@ p
 	font-family: 'Roboto', sans-serif;
 	font-size: 15px;
 	line-height: 2;
-	font-weight: 500;
+	font-weight: 400;
 	color: #696969;
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
@@ -106,7 +105,7 @@ p::selection
 	
 }
 h1{font-size: 48px;}
-h2{font-size: 36px text-decoration:underline;}
+h2{font-size: 36px;}
 h3{font-size: 24px;}
 h4{font-size: 18px;}
 h5{font-size: 14px;}
@@ -409,15 +408,19 @@ section
 }
 .logo_container
 {
-background: #ffffff none repeat scroll 0 0;
-    box-shadow: 0 31px 29px rgba(0, 0, 0, 0.09);
-    height: 177px;
-    left: 15px;
-    position: absolute;
-    top: 0;
-    transition: all 200ms ease 0s;
-    width: 216px;
-    z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 15px;
+	width: 216px;
+	height: 177px;
+	background: #FFFFFF;
+	box-shadow: 0px 31px 29px rgba(0,0,0,0.09);
+	z-index: 10;
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
 }
 .header.scrolled .logo_container
 {
@@ -647,306 +650,60 @@ background: #ffffff none repeat scroll 0 0;
 .home
 {
 	width: 100%;
-	height: 900px;
+	height: 473px;
 }
-.home_slider_container
-{
-	width: 100%;
-	height: 100%;
-}
-.home_slider_background
+.home_background
 {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
 }
-.home_slider_progress
+.home_container
 {
 	position: absolute;
 	left: 0;
-	bottom: 0px;
-	width: 0;
-	max-width: 100%;
-	height: 2px;
-	background: #20d34a;
-	z-index: 1;
-}
-.home_content
-{
-	position: absolute;
-	top: 39.8%;
-	left: 0;
+	bottom: 118px;
 	width: 100%;
 }
-.home_content_inner
-{
-	width: 550px;
-}
-.home_title h1
-{
-	font-size: 69.24px;
-	font-weight: 900;
-	color: #272727;
-	line-height: 1.0398;
-}
-.home_text
-{
-	padding-right: 20px;
-	margin-top: 10px;
-	padding-left: 3px;
-}
-.home_text p
-{
-	font-size: 16px;
-	font-weight: 500;
-	color: #747474;
-	line-height: 1.75;
-}
-.home_button
-{
-	margin-top: 34px;
-	margin-left: 3px;
-}
-
-/*********************************
-6. Boxes
-*********************************/
-
-.boxes
-{
-	width: 100%;
-	background: transparent;
-	z-index: 10;
-	padding-bottom: 35px;
-}
-.box_col
-{
-	margin-top: -59px;
-}
-.box
-{
-	width: 100%;
-	height: 287px;
-	background: #283290;
-	padding-left: 42px;
-	padding-top: 29px;
-	-webkit-transition: all 200ms ease;
-	-moz-transition: all 200ms ease;
-	-ms-transition: all 200ms ease;
-	-o-transition: all 200ms ease;
-	transition: all 200ms ease;
-}
-.box::after
-{
-	display: block;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 4px;
-	background: #20d34a;
-	content: '';
-}
-.box:hover
-{
-	box-shadow: 0px 15px 49px rgba(0,0,0,0.59);
-}
-.box_title
-{
-	font-size: 20px;
-	font-weight: 500;
-	color: #FFFFFF;
-	margin-top: 11px;
-}
-.working_hours
-{
-	padding-top: 29px;
-	padding-right: 60px;
-}
-.working_hours_list
-{
-	margin-top: 40px;
-}
-.working_hours_list ul li
-{
-	font-size: 14px;
-	font-weight: 400;
-	color: #FFFFFF;
-}
-.working_hours_list ul li:not(:last-child)
-{
-	margin-bottom: 15px;
-}
-.box_icon
-{
-	width: 37px;
-	height: 37px;
-}
-.box_icon img
-{
-	max-width: 100%;
-}
-.box_text
-{
-	font-size: 14px;
-	line-height: 2.14;
-	color: #FFFFFF;
-	font-weight: 400;
-	margin-top: 23px;
-}
-.box_phone
+.home_title
 {
 	font-size: 30px;
-	font-weight: 400;
+	font-weight: 900;
+	color: #FFFFFF;
+}
+.home_title span
+{
 	color: #20d34a;
-	margin-top: 20px;
 }
-.box_appointments
+.breadcrumbs
 {
-	padding-right: 30px;
+	margin-top: -2px;
 }
-.box_emergency
+.breadcrumbs ul li
 {
-	padding-right: 30px;
+	display: inline-block;
+	position: relative;
 }
-.box_emergency_text
+.breadcrumbs ul li:not(:last-child)::after
 {
-	font-size: 14px;
-	line-height: 2.14;
-	color: #FFFFFF;
-	font-weight: 400;
-	margin-top: 18px;
+	display: inline-block;
+	position: relative;
+	content: '/';
+	margin-left: 7px;
+	margin-right: 2px;
 }
-
-/*********************************
-7. About
-*********************************/
-
-.about
-{
-	width: 100%;
-	background: #FFFFFF;
-	padding-top: 92px;
-	padding-bottom: 92px;
-}
-.about_text
-{
-	margin-top: 34px;
-}
-.about_button
-{
-	margin-top: 45px;
-}
-.about_image
-{
-	position: absolute;
-	right: 0;
-	bottom: 0;
-}
-.about_image img
-{
-	max-width: 100%;
-}
-
-/*********************************
-8. Departments
-*********************************/
-
-.departments
-{
-	width: 100%;
-	background: transparent;
-	padding-top: 75px;
-	padding-bottom: 65px;	
-}
-.departments_background
-{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-.departments_row
-{
-	margin-top: 79px;
-}
-.dept_col
-{
-	margin-bottom: 30px;
-}
-.dept
-{
-	width: 100%;
-	height: 100%;
-}
-.dept_image
-{
-	width: 100%;
-}
-.dept_image img
-{
-	max-width: 100%;
-}
-.dept_content
-{
-	padding-top: 48px;
-	padding-bottom: 55px;
-	background: #FFFFFF;
-}
-.dept_content::after
-{
-	display: block;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 5px;
-	background: #20d34a;
-	content: '';
-}
-.dept_title
-{
-	font-size: 15px;
-	font-weight: 700;
-	text-transform: uppercase;
-	color: #232323;
-}
-.dept_subtitle
+.breadcrumbs ul li,
+.breadcrumbs ul li a
 {
 	font-size: 14px;
-	font-weight: 400;
-	color: #696969;
-	margin-top: 5px;
-}
-.dept_text p
-{
+	font-weight: 500;
 	color: #FFFFFF;
-	-webkit-transform: translateY(-9px);
-	-moz-transform: translateY(-9px);
-	-ms-transform: translateY(-9px);
-	-o-transform: translateY(-9px);
-	transform: translateY(-9px);
-}
-.dept_button
-{
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	background: #FFFFFF;
-}
-.dept_button a
-{
-	color: #272727;
 }
 
 /*********************************
-9. Services
+6. Services
 *********************************/
 
 .services
@@ -1080,7 +837,92 @@ background: #ffffff none repeat scroll 0 0;
 }
 
 /*********************************
-10. CTA
+7. Features
+*********************************/
+
+.features
+{
+	width: 100%;
+	background: #283290;
+	padding-top: 95px;
+	padding-left: 62px;
+	padding-right: 63px;
+	padding-bottom: 95px;
+}
+.features .container
+{
+	max-width: 100%;
+}
+.features .container .row .col
+{
+	padding-left: 0;
+	padding-right: 0;
+}
+.feature
+{
+	width: calc((100% - 64px) / 3);
+}
+.feature:not(:last-child)
+{
+	margin-bottom: 30px;
+}
+.feature_image
+{
+	width: 100%;
+}
+.feature_image img
+{
+	max-width: 100%;
+}
+.feature_content
+{
+	width: 100%;
+	background: #FFFFFF;
+	padding-left: 54px;
+	padding-top: 63px;
+	padding-bottom: 89px;
+	padding-right: 40px;
+}
+.feature_text
+{
+	margin-top: 34px;
+}
+
+/*********************************
+8. Text Section
+*********************************/
+
+.text_section
+{
+	width: 100%;
+	background: #FFFFFF;
+	padding-top: 95px;
+	padding-bottom: 94px;
+}
+.text_section_image
+{
+	width: 100%;
+}
+.text_section_image img
+{
+	max-width: 100%;
+}
+.text_section_content
+{
+	width: 100%;
+	height: 100%;
+}
+.text_section_text
+{
+	margin-top: 34px;
+}
+.text_section_button
+{
+	margin-top: 52px;
+}
+
+/*********************************
+9. CTA
 *********************************/
 
 .cta
@@ -1122,7 +964,7 @@ background: #ffffff none repeat scroll 0 0;
 }
 
 /*********************************
-11. Footer
+10. Footer
 *********************************/
 
 .footer
@@ -1303,27 +1145,4 @@ background: #ffffff none repeat scroll 0 0;
 .footer_social ul li a i:hover
 {
 	color: #FFFFFF;
-}
-.vticker{
-	/*border: 1px solid red;*/
-	width: 400px;
-	/*background-color: #FFFFFF;*/
-}
-.vticker ul{
-	padding: 0;
-}
-.vticker li{
-	list-style: none;
-	border-bottom: 1px solid green;
-	padding: 10px;
-}
-.fa{
-	cursor:pointer;
-}
-.newsbox{
-	float: right;
-    position: fixed;
-    right: 1em;
-    z-index: 200;
-    top: 173px;
 }

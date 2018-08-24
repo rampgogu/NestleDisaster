@@ -6,7 +6,7 @@
 	version="1.0">
 
 	<reload-interval value="3"/>
-	<context-root uri="NestleDisaster" />
+	<context-root uri="disaster-management" />
 	<enable-directory-browsing value="false"/>
 	<enable-file-serving value="true"/>
 	<enable-reloading value="true"/>
