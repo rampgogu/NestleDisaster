@@ -36,13 +36,13 @@
     <artifactId>db2jcc4</artifactId>
     <version>10.1</version>
    </dependency>-->
-   <dependency>
+<!--    <dependency>
     <groupId>com.ibm.db2</groupId>
     <artifactId>db2jcc</artifactId>
     <version>9</version>
 </dependency> 
    
-   
+    -->
     
     <!-- Servlet API -->
     <dependency>
